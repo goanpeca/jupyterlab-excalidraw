@@ -1,0 +1,88 @@
+{
+  "name": "jupyterlab-excalidraw",
+  "version": "0.0.2",
+  "description": "JupyterLab extension for Excalidraw — collaborative whiteboard drawing",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "excalidraw",
+    "drawing",
+    "whiteboard"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Gonzalo Peña-Castellanos"
+  },
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
+    "schema/*.json"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goanpeca/jupyterlab-excalidraw.git"
+  },
+  "scripts": {
+    "build": "jlpm build:lib && jlpm build:labextension:dev",
+    "build:prod": "jlpm clean && jlpm build:lib && jlpm build:labextension",
+    "build:lib": "tsc",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "clean": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:docs",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "clean:labextension": "rimraf jupyterlab_excalidraw/labextension",
+    "clean:docs": "rimraf docs/api",
+    "docs": "typedoc --out docs/api src/index.ts --tsconfig tsconfig.json",
+    "eslint:check": "eslint src/ --ext .ts,.tsx",
+    "eslint:fix": "eslint src/ --ext .ts,.tsx --fix",
+    "prettier": "prettier --write \"{src,style}/**/*.{ts,tsx,css,json}\"",
+    "prettier:check": "prettier --check \"{src,style}/**/*.{ts,tsx,css,json}\"",
+    "lint": "jlpm eslint:check && jlpm prettier:check",
+    "lint:fix": "jlpm eslint:fix && jlpm prettier",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "tsc -w",
+    "watch:labextension": "jupyter labextension watch ."
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "^0.18.0",
+    "@jupyterlab/application": "^4.0.0",
+    "@jupyterlab/apputils": "^4.0.0",
+    "@jupyterlab/docregistry": "^4.0.0",
+    "@jupyterlab/launcher": "^4.0.0",
+    "@jupyterlab/settingregistry": "^4.0.0",
+    "@jupyterlab/ui-components": "^4.0.0",
+    "@lumino/messaging": "^2.0.0",
+    "@lumino/signaling": "^2.0.0",
+    "@lumino/widgets": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^4.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.0",
+    "rimraf": "^6.0.0",
+    "typedoc": "^0.28.18",
+    "typescript": "~5.5.0"
+  },
+  "sideEffects": [
+    "style/*.css",
+    "style/index.js"
+  ],
+  "styleModule": "style/index.js",
+  "jupyterlab": {
+    "extension": true,
+    "outputDir": "jupyterlab_excalidraw/labextension",
+    "schemaDir": "schema"
+  }
+}
