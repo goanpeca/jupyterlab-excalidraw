@@ -1,0 +1,15 @@
+/* jupyterlab-excalidraw — Widget Styles */
+
+.jp-ExcalidrawWidget {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.jp-ExcalidrawWidget .excalidraw-wrapper,
+.jp-ExcalidrawWidget .excalidraw,
+.jp-ExcalidrawWidget .excalidraw .layer-ui__wrapper {
+  width: 100% !important;
+  height: 100% !important;
+}

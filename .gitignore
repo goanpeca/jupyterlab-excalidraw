@@ -33,8 +33,9 @@ jupyterlab_excalidraw/labextension/
 coverage.xml
 htmlcov/
 
-# Docs (generated from source)
-docs/
+# Docs (only ignore generated API docs and plans, keep images/)
+docs/api/
+docs/superpowers/
 
 # IDE / OS
 .venv/

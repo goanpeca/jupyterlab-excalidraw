@@ -1,0 +1,27 @@
+{
+  "jupyter.lab.setting-icon-label": "Excalidraw",
+  "title": "Excalidraw",
+  "description": "Settings for the Excalidraw drawing extension.",
+  "type": "object",
+  "properties": {
+    "syncTheme": {
+      "type": "boolean",
+      "title": "Sync theme with JupyterLab",
+      "description": "Automatically set Excalidraw to dark/light mode based on the JupyterLab theme.",
+      "default": true
+    },
+    "gridMode": {
+      "type": "boolean",
+      "title": "Grid mode",
+      "description": "Show a background grid on new drawings.",
+      "default": false
+    },
+    "viewBackgroundColor": {
+      "type": "string",
+      "title": "Background color",
+      "description": "Default canvas background color for new drawings (CSS color value). Leave empty to use Excalidraw's default.",
+      "default": ""
+    }
+  },
+  "additionalProperties": false
+}
