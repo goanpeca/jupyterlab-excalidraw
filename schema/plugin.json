@@ -1,0 +1,15 @@
+{
+  "jupyter.lab.setting-icon-label": "Excalidraw",
+  "title": "Excalidraw",
+  "description": "Settings for the Excalidraw drawing extension.",
+  "type": "object",
+  "properties": {
+    "syncTheme": {
+      "type": "boolean",
+      "title": "Sync theme with JupyterLab",
+      "description": "Automatically set Excalidraw to dark/light mode based on the JupyterLab theme.",
+      "default": true
+    }
+  },
+  "additionalProperties": false
+}

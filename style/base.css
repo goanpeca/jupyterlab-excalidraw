@@ -1,18 +1,15 @@
 /* jupyterlab-excalidraw — Widget Styles */
 
-/*
- * The Excalidraw React component fills 100% of its parent.
- * Ensure the widget container has explicit dimensions.
- */
 .jp-ExcalidrawWidget {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.jp-ExcalidrawWidget .excalidraw-container {
-  flex: 1;
-  min-height: 0;
+.jp-ExcalidrawWidget .excalidraw-wrapper,
+.jp-ExcalidrawWidget .excalidraw,
+.jp-ExcalidrawWidget .excalidraw .layer-ui__wrapper {
+  width: 100% !important;
+  height: 100% !important;
 }

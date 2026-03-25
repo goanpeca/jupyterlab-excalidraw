@@ -1,0 +1,8 @@
+node_modules/
+lib/
+jupyterlab_excalidraw/labextension/
+.yarn/
+*.egg-info/
+dist/
+docs/
+coverage/
