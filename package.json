@@ -73,7 +73,7 @@
     "prettier": "^3.0.0",
     "rimraf": "^5.0.0",
     "typedoc": "^0.28.18",
-    "typescript": "~5.3.0"
+    "typescript": "~6.0.2"
   },
   "sideEffects": [
     "style/*.css",
