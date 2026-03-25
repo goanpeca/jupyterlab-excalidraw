@@ -1,0 +1,8 @@
+node_modules/
+lib/
+jupyterlab_excalidraw/labextension/
+*.tgz
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+tsconfig.tsbuildinfo
