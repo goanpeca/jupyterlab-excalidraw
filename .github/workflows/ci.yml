@@ -55,7 +55,7 @@ jobs:
           node-version: "22"
       - run: pip install -e ".[dev]"
       - run: pytest --cov=jupyterlab_excalidraw --cov-report=xml -v
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.13'
         with:
           file: ./coverage.xml
