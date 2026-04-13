@@ -1655,13 +1655,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.0.26, @types/react@npm:^18.2.0":
+"@types/react@npm:^18.0.26":
   version: 18.3.28
   resolution: "@types/react@npm:18.3.28"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.2.2
   checksum: 9d59fb3def4e712d4f8fa15998791a07f9799462f8d581d17039a9503017bfce3463d57fc737ce1d28d6aa3f482f4a3a5bae5a662d97560a9359aab111556c97
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^19.2.14":
+  version: 19.2.14
+  resolution: "@types/react@npm:19.2.14"
+  dependencies:
+    csstype: ^3.2.2
+  checksum: ddd330292abf2dc2cfa65188e1c5f67cc6e90f8d8ffb088f753a38db9d123f942c23d324a6b7e8027ff04f22b395492150f54b9b520b6cbec1e8841e669f2c19
   languageName: node
   linkType: hard
 
@@ -4801,7 +4810,7 @@ __metadata:
     "@lumino/messaging": ^2.0.0
     "@lumino/signaling": ^2.0.0
     "@lumino/widgets": ^2.0.0
-    "@types/react": ^18.2.0
+    "@types/react": ^19.2.14
     "@types/react-dom": ^18.2.0
     "@typescript-eslint/eslint-plugin": ^7.0.0
     "@typescript-eslint/parser": ^7.0.0
@@ -4809,7 +4818,7 @@ __metadata:
     eslint-config-prettier: ^9.0.0
     npm-run-all: ^4.1.5
     prettier: ^3.0.0
-    react: ^18.2.0
+    react: ^19.2.5
     react-dom: ^18.2.0
     rimraf: ^6.0.0
     typedoc: ^0.28.18
@@ -6320,6 +6329,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react@npm:^19.2.5":
+  version: 19.2.5
+  resolution: "react@npm:19.2.5"
+  checksum: 95563d3ceba2b6bf18bc4bb1e515a4fd49645630f8a017eb139fa37425f673ded545a9b6d1039021cc8a545b2a697ccfa03ac37b20c3dfa60c079f67bdabbedb
+  languageName: node
+  linkType: hard
+
 "read-pkg@npm:^3.0.0":
   version: 3.0.0
   resolution: "read-pkg@npm:3.0.0"
@@ -7276,11 +7292,11 @@ __metadata:
 
 "typescript@patch:typescript@~5.5.0#~builtin<compat/typescript>":
   version: 5.5.4
-  resolution: "typescript@patch:typescript@npm%3A5.5.4#~builtin<compat/typescript>::version=5.5.4&hash=85af82"
+  resolution: "typescript@patch:typescript@npm%3A5.5.4#~builtin<compat/typescript>::version=5.5.4&hash=379a07"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: fc52962f31a5bcb716d4213bef516885e4f01f30cea797a831205fc9ef12b405a40561c40eae3127ab85ba1548e7df49df2bcdee6b84a94bfbe3a0d7eff16b14
+  checksum: e14c87e8bd51f9ac741051a2c3bde75b2a3ab17dee2c50239f7e1a0868673f3b7d4d87684df41a59a8f57c6ddc5d06d65d120764d992441af5de07b98cf9c67b
   languageName: node
   linkType: hard
 
