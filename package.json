@@ -48,7 +48,7 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@excalidraw/excalidraw": "^0.18.0",
+    "@excalidraw/excalidraw": "^0.18.1",
     "@jupyterlab/application": "^4.0.0",
     "@jupyterlab/apputils": "^4.0.0",
     "@jupyterlab/docregistry": "^4.0.0",
