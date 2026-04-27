@@ -46,7 +46,7 @@ Changelog = "https://github.com/goanpeca/jupyterlab-excalidraw/blob/main/CHANGEL
 dev = [
     "pytest>=7.0",
     "pytest-cov>=4.0",
-    "ruff>=0.4",
+    "ruff>=0.15.12",
     "jupyterlab>=4.0.0,<5",
 ]
 
